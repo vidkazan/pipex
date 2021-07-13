@@ -1,6 +1,38 @@
-abcdffg1
-abcdffg2
-abcdffg3
-abcdefg4
-abcdefg5
-abcdefg6
+total 20
+drwxr-xr-x   37 root  wheel          1184 May 25 02:15 .
+drwxr-xr-x   37 root  wheel          1184 May 25 02:15 ..
+-rw-rw-r--    1 root  admin             0 Feb 26  2019 .DS_Store
+d--x--x--x    9 root  wheel           288 Jul 13 00:26 .DocumentRevisions-V100
+-rw-r--r--    1 root  wheel           992 May 25 02:15 .OSInstallerMessages
+drwxr-xr-x@   2 root  wheel            64 Jun 29 19:09 .PKInstallSandboxManager-SystemSoftware
+drwx------    5 root  wheel           160 Jun 18 12:15 .Spotlight-V100
+d-wx-wx-wt   40 root  wheel          1280 Jul 13 15:46 .Trashes
+----------    1 root  admin             0 Feb 26  2019 .file
+drwx------  341 root  wheel         10912 Jul 13 13:26 .fseventsd
+drwxr-xr-x    2 root  wheel            64 Feb 26  2019 .vol
+drwxrwxr-x+  68 root  admin          2176 Jul 11 06:50 Applications
+drwxr-xr-x+  66 root  wheel          2112 Nov 30  2020 Library
+drwxr-xr-x    2 root  wheel            64 Feb 26  2019 Network
+drwxr-xr-x    3 root  admin            96 Jan 29  2020 Previous Content
+drwxr-xr-x@   5 root  wheel           160 Sep 21  2019 System
+drwxr-xr-x  171 root  admin          5472 Jul 13 15:46 Users
+drwxr-xr-x+   3 root  wheel            96 Jul 13 16:02 Volumes
+drwxr-xr-x@  38 root  wheel          1216 Jan 29  2020 bin
+drwxrwxr-t    2 root  admin            64 Feb 26  2019 cores
+dr-xr-xr-x    3 root  wheel          4852 Jul 13 00:25 dev
+lrwxr-xr-x@   1 root  wheel            11 Jan 29  2020 etc -> private/etc
+drwx------   18 exam  applications    576 Feb  4 17:47 exam
+drwxrwxrwt  172 root  wheel          5504 Jul 13 15:46 goinfre
+dr-xr-xr-x    2 root  wheel            64 Jan 29  2020 home
+drwxrwxrwt    2 root  wheel            64 Jan 29  2020 iSCSI
+-rw-r--r--    1 root  wheel           313 May 31  2019 installer.failurerequests
+dr-xr-xr-x    2 root  wheel            64 Jan 29  2020 net
+drwxr-xr-x    3 root  wheel            96 Jan 29  2020 nfs
+drwxr-xr-x    3 root  wheel            96 Dec 29  2020 opt
+drwxr-xr-x+  12 pres  applications    384 May 24 16:11 pres
+drwxr-xr-x    6 root  wheel           192 Jan 29  2020 private
+drwxr-xr-x@  65 root  wheel          2080 Dec  9  2019 sbin
+dr-xr-xr-x    2 root  wheel             1 Jul 13 00:26 sgoinfre
+lrwxr-xr-x@   1 root  wheel            11 Jan 29  2020 tmp -> private/tmp
+drwxr-xr-x@   9 root  wheel           288 Jul  7  2020 usr
+lrwxr-xr-x@   1 root  wheel            11 Jan 29  2020 var -> private/var

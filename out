@@ -1,0 +1,5 @@
+-rw-rw-r--    1 root  admin             0 Feb 26  2019 .DS_Store
+----------    1 root  admin             0 Feb 26  2019 .file
+drwxrwxr-x+  68 root  admin          2176 Jul 11 06:50 Applications
+drwxr-xr-x  171 root  admin          5472 Jul 13 15:46 Users
+drwxrwxr-t    2 root  admin            64 Feb 26  2019 cores
