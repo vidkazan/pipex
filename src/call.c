@@ -9,6 +9,7 @@ void	pipex_child(t_pipex *pipex, int pfd[], char **av, char **envp)
 	{
 		ft_putstr_fd("pipex: file1 error: ", 2);
 		ft_putstr_fd(strerror(errno), 2);
+		ft_putstr_fd("\n", 2);
 		exit(1);
 	}
 	dup2(in, 0);
@@ -17,6 +18,7 @@ void	pipex_child(t_pipex *pipex, int pfd[], char **av, char **envp)
 	{
 		ft_putstr_fd("pipex: cmd1 error: ", 2);
 		ft_putstr_fd(strerror(errno), 2);
+		ft_putstr_fd("\n", 2);
 		exit(1);
 	}
 }

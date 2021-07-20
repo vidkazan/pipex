@@ -36,26 +36,26 @@ void	pipex_close(int code, t_pipex *pipex)
 {
 	if (code == 1)
 		ft_putstr_fd("pipex: usage: ./pipex file1 cmd1 cmd2 file2\n", 2);
-	else if (code == 4)
+	if (code == 4)
 		ft_putstr_fd("pipex: file2 error: ", 2);
-	else if (code == 4)
+	if (code == 4)
 		ft_putstr_fd(strerror(errno), 2);
-	else if (code == 5)
+	if (code == 5)
 	{
 		ft_putstr_fd("pipex: pipe error: ", 2);
 		ft_putstr_fd(strerror(errno), 2);
 	}
-	else if (code == 6)
+	if (code == 6)
 	{
 		ft_putstr_fd("pipex: fork error: ", 2);
 		ft_putstr_fd(strerror(errno), 2);
 	}
-	else if (code == 8)
+	if (code == 8)
 	{
 		ft_putstr_fd("pipex: cmd2 error: ", 2);
 		ft_putstr_fd(strerror(errno), 2);
 	}
-	else if (code == 666)
+	if (code == 666)
 		ft_putstr_fd("pipex: malloc lucky rare error:)\n", 2);
 	free_pipex(pipex);
 	exit(1);
