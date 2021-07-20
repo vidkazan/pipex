@@ -45,17 +45,36 @@ void	path_check(t_pipex *pipex, int type, \
 	}
 }
 
+static void	env_path_find(char **envp, t_pipex *pipex)
+{
+	int		i;
+	char	*path_str;
+
+	path_str = NULL;
+	i = -1;
+	while (envp[++i])
+	{
+		if ((envp[i][0]) == 'P' && (envp[i][1]) == 'A' && \
+		(envp[i][2]) == 'T' && (envp[i][3]) == 'H' && (envp[i][4]) == '=')
+		{
+			envp[i] += 5;
+			pipex->path_ptr = envp[i];
+		}
+	}
+}
+
 void	find_path(t_pipex *pipex, char **envp, int type)
 {
 	char	*filename_no_path;
 	char	**path_arr;
 
-	path_arr = ft_split(envp[0], ':');
-	if (!path_arr)
-		pipex_close(666, pipex);
 	if ((access(pipex->a[0], F_OK) > -1 && type == 1) || \
 		 (access(pipex->b[0], F_OK) > -1 && type == 2))
 		return ;
+	env_path_find(envp, pipex);
+	path_arr = ft_split(pipex->path_ptr, ':');
+	if (!path_arr)
+		pipex_close(666, pipex);
 	if (type == 1)
 		filename_no_path = pipex->a[0];
 	else

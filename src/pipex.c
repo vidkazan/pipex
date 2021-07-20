@@ -5,6 +5,7 @@ void	pipex_init(t_pipex *pipex)
 	pipex->a = NULL;
 	pipex->b = NULL;
 	pipex->error_code = 0;
+	pipex->path_ptr = NULL;
 }
 
 void	free_arr(char **str)

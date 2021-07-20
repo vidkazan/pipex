@@ -15,6 +15,7 @@ typedef struct s_pipex
 	char		**a;
 	char		**b;
 	pid_t		pid;
+	char		*path_ptr;
 }				t_pipex;
 
 void	ft_putchar_fd(char c, int fd);
