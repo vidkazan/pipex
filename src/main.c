@@ -107,5 +107,6 @@ int	main(int ac, char **av, char **envp)
 		pipex_child(pipex, pfd, av, envp);
 	else
 		pipex_parent(pipex, pfd, av, envp);
+	close(pfd[0]);
 	return (0);
 }

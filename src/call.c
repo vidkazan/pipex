@@ -7,6 +7,7 @@ void	pipex_child(t_pipex *pipex, int pfd[], char **av, char **envp)
 	in = open(av[1], O_RDONLY);
 	if (in < 0)
 	{
+		pipex->error_code = 10;
 		ft_putstr_fd("pipex: file1 error: ", 2);
 		ft_putstr_fd(strerror(errno), 2);
 		ft_putstr_fd("\n", 2);
@@ -16,6 +17,7 @@ void	pipex_child(t_pipex *pipex, int pfd[], char **av, char **envp)
 	dup2(pfd[1], 1);
 	if (execve(pipex->a[0], pipex->a, envp) < 0)
 	{
+		pipex->error_code = 10;
 		ft_putstr_fd("pipex: cmd1 error: ", 2);
 		ft_putstr_fd(strerror(errno), 2);
 		ft_putstr_fd("\n", 2);
