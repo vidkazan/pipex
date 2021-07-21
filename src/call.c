@@ -29,7 +29,7 @@ void	pipex_parent(t_pipex *pipex, int pfd[], char **av, char **envp)
 
 	wait(0);
 	close(pfd[1]);
-	out = open(av[4], O_RDWR, O_CREAT, O_TRUNC);
+	out = open(av[4], O_RDWR | O_CREAT | O_TRUNC, 0777);
 	if (out < 0)
 		pipex_close(4, pipex);
 	dup2(out, 1);
